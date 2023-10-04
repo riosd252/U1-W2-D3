@@ -130,7 +130,7 @@ let femaleCharacters = [];
 for (let i = 0; i < starWarsCharacters.length; i++) {
   const sex = starWarsCharacters[i];
 
-  if (starWarsCharacters[i].gender === "female") {
+  if (sex.gender === "female") {
     femaleCharacters.push(sex);
   } else {
     continue;
