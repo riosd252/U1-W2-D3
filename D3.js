@@ -185,21 +185,21 @@ console.log(eyeColor);
 
 let num = 0;
 
-let calcMass = 0;
-
 let crewMass = 0;
 
 while (num < starWarsCharacters.length) {
-  let mass = starWarsCharacters[0].mass + starWarsCharacters[+1].mass;
+  let characterMass = starWarsCharacters[num].mass;
 
-  calcMass = mass;
+  //crewMass = crewMass + characterMass;
 
-  crewMass = calcMass + mass;
+  crewMass += characterMass;
 
   num++;
 }
 
 console.log(crewMass);
+
+//console.log(crewMass);
 
 /* ESERCIZIO 7
   Crea uno if/else statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters".
